@@ -27,38 +27,33 @@ function categoryFilter(category) {
 }
 items.forEach((item) => createItem(item.name, item.price, item.image));
 
-DOM.aberrationFilter.addEventListener("click", function () {
-  categoryFilter("aberration");
+DOM.FreeFilter.addEventListener("click", function () {
+  categoryFilter("Free");
 });
 
-DOM.beastFilter.addEventListener("click", function () {
-  categoryFilter("beast");
+DOM.TeamFilter.addEventListener("click", function () {
+  categoryFilter("Team");
 });
 
-DOM.pokemonFilter.addEventListener("click", function () {
-  categoryFilter("pokemon");
+DOM.VODFilter.addEventListener("click", function () {
+  categoryFilter("VOD");
 });
 
-DOM.undeadFilter.addEventListener("click", function () {
-  categoryFilter("undead");
+DOM.OnehourFilter.addEventListener("click", function () {
+  categoryFilter("Onehour");
 });
 
-DOM.dragonFilter.addEventListener("click", function () {
-  categoryFilter("dragon");
+DOM.OneononeFilter.addEventListener("click", function () {
+  categoryFilter("Oneonone");
 });
 
-DOM.singingFilter.addEventListener("click", function () {
-  categoryFilter("singing");
+DOM.PaidFilter.addEventListener("click", function () {
+  categoryFilter("Paid");
 });
 
-DOM.waterFilter.addEventListener("click", function () {
-  categoryFilter("water");
+DOM.TwohourFilter.addEventListener("click", function () {
+  categoryFilter("Twohour");
 });
-
-DOM.iceFilter.addEventListener("click", function () {
-  categoryFilter("ice");
-});
-
 DOM.resetButton.addEventListener("click", function () {
   DOM.items.innerHTML = "";
   items.forEach((item) => createItem(item.name, item.price, item.image));
